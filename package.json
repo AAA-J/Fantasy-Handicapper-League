@@ -1,0 +1,44 @@
+{
+  "name": "fantasy-handicapper-league",
+  "version": "1.0.0",
+  "description": "Local betting application with Market Prediction Contracts and Fantasy Handicapper League",
+  "main": "server/src/index.js",
+  "scripts": {
+    "install:all": "npm run install:server && npm run install:client",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "node test-setup.js",
+    "test:setup": "node test-setup.js"
+  },
+  "keywords": [
+    "betting",
+    "fantasy",
+    "prediction",
+    "contracts",
+    "react",
+    "nodejs",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/Fantasy-Handicapper-League.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/Fantasy-Handicapper-League/issues"
+  },
+  "homepage": "https://github.com/your-username/Fantasy-Handicapper-League#readme"
+}
